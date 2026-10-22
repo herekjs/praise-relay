@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "api",
-      "runtimeExecutable": "api/gradlew.bat",
+      "runtimeExecutable": "C:\\Users\\herekjs\\tools\\gradle-8.10.2\\bin\\gradle.bat",
       "runtimeArgs": ["-p", "api", "bootRun"],
       "port": 8080
     },
