@@ -1,15 +1,17 @@
-# Render에서 api 서버를 올리는 설정이에요. 디스크가 있어야 글이 서버를 다시 켜도 남아요.
+# Render에서 api 서버를 올리는 설정이에요.
+# 무료 요금제라 디스크가 없어서, 서버가 다시 켜지면 저장된 글이 사라져요.
+# 글을 남기려면 plan을 starter로 바꾸고 아래 disk 줄의 주석을 풀어 주세요.
 services:
   - type: web
     name: praise-relay-api
     runtime: docker
     rootDir: api
-    plan: starter
+    plan: free
     healthCheckPath: /api/entries
-    envVars:
-      - key: DB_URL
-        value: jdbc:sqlite:/data/praise.db
-    disk:
-      name: praise-data
-      mountPath: /data
-      sizeGB: 1
+    # envVars:
+    #   - key: DB_URL
+    #     value: jdbc:sqlite:/data/praise.db
+    # disk:
+    #   name: praise-data
+    #   mountPath: /data
+    #   sizeGB: 1
