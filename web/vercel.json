@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://API_ADDRESS_HERE/api/:path*"
+      "destination": "https://praise-relay-api.onrender.com/api/:path*"
     }
   ]
 }
